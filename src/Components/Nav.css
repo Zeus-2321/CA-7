@@ -1,0 +1,40 @@
+.nav{
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.nav > img{
+    max-height: 7vh;
+}
+
+#button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button{
+    min-width: max-content;
+    min-height: max-content;
+    width: 8vw;
+    height: 5vh;
+    background-color: rgb(0, 201, 54);
+    color: white;
+    font-size: large;
+    font-weight: 300;
+    border: none;
+    border-radius: 6px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #008600;
+    transition: 0.1s ease-in-out;
+}
+
+
+
+
+
