@@ -3,6 +3,8 @@ import React from 'react';
 import Card from './Card';
 import axios from 'axios';
 import "./Content.css"
+import "./NoResults";
+import NoResults from './NoResults';
 
 const Content = () => {
   const [search, setSearch] = useState('');
@@ -49,7 +51,9 @@ const Content = () => {
         </div>
       </div>
 
-      <div className="container">{<Card book={bookData} />}</div>
+      <div className="container">
+        {typeof bookData === 'undefined' ? <NoResults /> : <Card book={bookData} />}
+      </div>
     </>
   );
 };
