@@ -7,11 +7,11 @@ import Content from './Components/Content';
 function App() {
   return (
     <>
-      <Nav />
-      <div className="entity">
+      <Nav/>
+      <div>
         <Routes>
           <Route path="/" element={<Content />} />
-          <Route path="/register" element={<Form />} />
+          <Route path="/register" element={<Form />}/>
         </Routes>
       </div>
     </>
